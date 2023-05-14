@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Fira+Sans&family=Handlee&family=Italianno&family=Montserrat&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@400;500;700;900&family=Satisfy&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); * {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(3, 51, 51);
+    font-family: "Work Sans", sans-serif;
+    font-size: 14px;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+section {
+    padding: 70px 0px;
+}
+
+.container {
+    width: 1100px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+.section_title {
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+    margin-bottom: 70px;
+    cursor: default;
+}
+
+.section_title h2::before {
+    content: "";
+    background: rgb(29, 216, 129);
+    width: 67px;
+    height: 3px;
+    position: absolute;
+    top: 36px;
+    left: 516px;
+    transform: translate(0px, 8px);
+}
+
+section#top_header {
+    position: relative;
+    margin-top: 500px;
+    top: 0px;
+}
+
+#topber {
+    background-color: rgb(26, 85, 85);
+    padding: 6px;
+    position: sticky;
+    top: 0px;
+    z-index: 11;
+}
+
+.topber_wrapper {
+    overflow: hidden;
+}
+
+.topber_logo {
+    width: 140px;
+    float: left;
+    margin: 10px 0px;
+}
+
+.topber_logo h2:hover {
+    cursor: pointer;
+}
+
+.topber_logo span {
+    color: rgb(29, 216, 129);
+    margin-left: 3px;
+}
+
+.topber_logo img {
+    width: 100%;
+}
+
+ul.menu {
+    list-style: none;
+    float: right;
+}
+
+ul.menu a {
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    transition: all 0.4s ease 0s;
+}
+
+ul.menu li a:hover {
+    color: rgb(29, 216, 129) !important;
+}
+
+.topber_menu {
+    width: 950px;
+    float: left;
+    margin-top: 13px;
+}
+
+ul.menu li {
+    display: inline;
+    margin-right: 25px;
+}
+
+ul.sub_menu {
+    list-style: none;
+    width: 110px;
+    position: absolute;
+    top: unset;
+    right: 70px;
+    z-index: 1;
+    background: rgb(26, 85, 85);
+    padding: 10px;
+    border-top: 1px solid rgb(26, 85, 85);
+    transform: scaleY(0);
+    transform-origin: center top;
+    visibility: hidden;
+    transition: all 0.5s ease 0s;
+    margin-top: 18px;
+}
+
+ul.sub_menu li {
+    float: none;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+ul.sub_menu li a {
+    color: white;
+    font-size: 14px;
+    position: relative;
+}
+
+ul.sub_menu li a::before {
+    content: "";
+    background: rgb(255, 82, 0);
+    display: inline-block;
+    width: 0px;
+    height: 2px;
+    vertical-align: middle;
+    margin-right: 10px;
+    transition: all 0.6s ease 0s;
+}
+
+ul.sub_menu li:hover a::before {
+    width: 15px;
+}
+
+ul.menu li:hover ul.sub_menu {
+    transform: scale(1);
+    visibility: visible;
+}
+
+#copyright {
+    background: rgb(26, 85, 85);
+    padding: 20px;
+}
+
+.copy_rights {
+    width: 400px;
+    float: left;
+    margin-top: 10px;
+}
+
+.copy_rights p {
+    font-size: 15px;
+    font-family: "Work Sans";
+    color: rgb(221, 221, 221);
+}
+
+.footer_social {
+    width: 260px;
+    float: right;
+    margin: 0px;
+}
+
+ul#footer_link li {
+    list-style: none;
+    width: 60px;
+}
+
+ul#footer_link {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+ul#footer_link a i {
+    text-decoration: none;
+    color: black;
+    background: rgb(29, 216, 129);
+    padding: 8px;
+    width: 16px;
+    height: 15px;
+    display: flex;
+    place-content: center;
+    border-radius: 100%;
+    font-size: 16px;
+    border: 2px solid rgb(29, 216, 129);
+    transition: all 0.4s ease 0s;
+}
+
+.social_wrapper {
+    overflow: hidden;
+}
+
+ul#footer_link li a {
+    text-decoration: none;
+}
+
+ul#footer_link a i:hover {
+    color: white;
+    background: rgb(26, 85, 85);
+}
+
+.login_form {
+    width: 285px;
+    background: rgb(245, 245, 245);
+    color: black;
+    padding: 20px;
+    border-radius: 2px;
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+.form_title h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    margin-top: 6px;
+}
+
+.form_input input {
+    width: 92%;
+    padding: 9px;
+    margin-top: 15px;
+    border: 1px solid rgba(221, 221, 221, 0.725);
+    outline: none;
+    background: rgb(241, 239, 239);
+    border-radius: 2px;
+}
+
+.form_title h2::before {
+    content: "";
+    background: rgb(29, 216, 129);
+    position: absolute;
+    left: 97px;
+    right: 0px;
+    top: 32px;
+    transform: translateY(-50%);
+    width: 80px;
+    height: 3px;
+    border-radius: 2px;
+}
+
+button#btn {
+    background: rgb(29, 216, 129);
+    padding: 10px;
+    border: none;
+    width: 99%;
+    border-radius: 3px;
+    font-size: 16px;
+    color: white;
+    font-family: "Work Sans";
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 16px;
+    margin-bottom: 6px;
+}
+
+.form_img {
+    position: relative;
+    inset: 0px;
+}
+
+section#form {
+    width: 100%;
+}
+
+.form_img img {
+    width: 100%;
+    height: 500px;
+}
+
+.form_img::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.58);
+    width: 100%;
+    height: 500px;
+    position: absolute;
+}
+
+input#check_box {
+    width: 10%;
+}
+
+.remember_login {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 155px;
+}
+
+input[type="checkbox"] {
+    width: 20%;
+}
+
+.remember_login span {
+    font-size: 18px;
+}
+
+label.frg_pass {
+}
+
+.user_login a {
+    text-decoration: none;
+    color: rgb(0 157 84);
+}
+
+a {
+}
